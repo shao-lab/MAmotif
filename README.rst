@@ -27,6 +27,11 @@ Documentation
 
 To see the full documentation of MAmoitf, please refer to: http://bioinfo.sibs.ac.cn/shaolab/mamotif/index.php
 
+Workflow
+--------
+
+.. image:: https://github.com/shao-lab/MAmotif/image/MAmotif_workflow.png
+
 Installation
 ------------
 
