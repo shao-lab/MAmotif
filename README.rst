@@ -82,6 +82,7 @@ Motif raw matrix file should follow the format as below:
 motif id and motif name are followed by a positive weighted matrix, and columns are seperated by tabs.
 
 ::
+
     >MA0599.1 KLF5
     1429 0 0 3477 0 5051 0 0 0 3915
     2023 11900 12008 9569 13611 0 13611 13611 13135 5595
