@@ -104,6 +104,36 @@ run MAmotif
 **Note:** Using -h/--help for the details of all arguments.
 
 
+Output of MAmotif
+-----------------
+
+After finished running MAmotif, all output files will be written to the directory you specified with "-o" argument.
+
+The main output file will include the following fields:
+
+::
+
+    1.Motif Name
+    2.Target Number: Number of peaks with motif targets
+    3.Average of Target M-value
+    4.Deviation of Target M-value
+    5.Non-target Number: Number of peaks without motif targets
+    6.Average of Non-target M-value
+    7.Deviation of Non-target M-value
+    8.T-test Statistics: T-Statistics for M-values of (peaks with motif targets) against (peaks without motif targets)
+    9.T-test P-value(right-tail)
+    10.T-test P-value By Benjamin correction
+    11.RanSum-test Statistics
+    12.RankSum-test P-value(right-tail)
+    13.RankSum-test P-value By Benjamin correction
+    14.Maximal P-value: Maximal corrected P-value of T-test and RankSum test
+
+
+MAmotif will also output tables to summarize the motif targets number and motif score of each peak region.
+
+If you specified "-s" with MAmotif, it will also output the genome coordinates of every motif targets.
+
+
 License
 -------
 
