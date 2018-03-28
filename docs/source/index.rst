@@ -4,7 +4,7 @@ MAmotif
 .. image:: https://travis-ci.org/shao-lab/MAmotif.svg?branch=master
    :alt: Travis Build
    :target: https://travis-ci.org/shao-lab/MAmotif
-.. image:: https://readthedocs.org/projects/mamoitf/badge/?version=latest
+.. image:: https://readthedocs.org/projects/mamotif/badge/?version=latest
    :alt: Documentation Status
    :target: http://mamotif.readthedocs.io/en/latest/?badge=latest
 .. image:: https://img.shields.io/pypi/v/mamotif.svg

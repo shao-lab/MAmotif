@@ -35,7 +35,7 @@ Workflow
 Documentation
 -------------
 
-To see the full documentation of MAmoitf, please refer to: http://bioinfo.sibs.ac.cn/shaolab/mamotif/index.php
+To see the full documentation of MAmotif, please refer to: http://mamotif.readthedocs.io/en/latest/
 
 Installation
 ------------
@@ -137,8 +137,8 @@ MAnorm output
 MAmotif will invoke MAnorm and output the normalization results and MA-plot for samples under comparison.
 
 
-Motif output
-^^^^^^^^^^^^
+MotifScan output
+^^^^^^^^^^^^^^^^
 
 MAmotif will also output tables to summarize the enrichment of motifs and the motif target number and motif-score
 of each peak region.
