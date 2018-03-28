@@ -80,8 +80,8 @@ Usage of MAmotif
 
 To check whether MAmotif is properly installed, you can inspect the version of MAmotif by ``-v/--version`` option::
 
-  $ manorm -v
-  $ manorm --version
+  $ mamotif -v
+  $ mamotif --version
 
 Command-Line Usage
 ------------------
