@@ -1,11 +1,14 @@
 MAmotif
 =======
 
-|pypi| |license|
+|travis-ci| |Documentation Status| |pypi| |license|
 
+.. |travis-ci| image:: https://travis-ci.org/shao-lab/MAnorm.svg?branch=master
+   :target: https://travis-ci.org/shao-lab/MAmotif
+.. |Documentation Status| image:: https://readthedocs.org/projects/manorm/badge/?version=latest
+   :target: http://mamotif.readthedocs.io/en/latest/?badge=latest
 .. |pypi| image:: https://img.shields.io/pypi/v/mamotif.svg
    :target: https://pypi.python.org/pypi/mamotif
-
 .. |license| image:: https://img.shields.io/pypi/l/MAmotif.svg
    :target: https://github.com/shao-lab/MAmoitf/blob/master/LICENSE
 
