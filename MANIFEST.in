@@ -1,0 +1,8 @@
+include LICENSE
+include CHANGELOG.rst
+include README.md
+
+graft docs
+prune docs/build
+
+graft tests

@@ -1,0 +1,8 @@
+.idea/
+docs/build/
+build
+dist/
+*.pyc
+.tox/
+.coverage
+MAmoitf.egg-info/
