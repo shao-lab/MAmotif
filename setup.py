@@ -17,7 +17,7 @@ CLASSIFIERS = ['Development Status :: 3 - Alpha',
                'Topic :: Scientific/Engineering :: Bio-Informatics',
                ]
 
-with open('README.md', 'r') as fin:
+with open('README.rst', 'r') as fin:
     long_description = fin.read()
 
 setup(name="MAmotif",
