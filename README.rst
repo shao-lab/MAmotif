@@ -10,7 +10,7 @@ MAmotif
 .. |pypi| image:: https://img.shields.io/pypi/v/mamotif.svg
    :target: https://pypi.python.org/pypi/mamotif
 .. |license| image:: https://img.shields.io/pypi/l/MAmotif.svg
-   :target: https://github.com/shao-lab/MAmoitf/blob/master/LICENSE
+   :target: https://github.com/shao-lab/MAmotif/blob/master/LICENSE
 
 Introduction
 ------------
