@@ -177,7 +177,7 @@ We take the H3K4me3 analysis between adult and fetal ProES in MAmotif paper as a
     $sed -i "s/ /\t/g" GSM908039_H3K4me3-A.bed
 
 
-2. Build for genome sequences::
+3. Build for genome sequences::
 
     $mkdir genome
     $cd genome
@@ -187,7 +187,7 @@ We take the H3K4me3 analysis between adult and fetal ProES in MAmotif paper as a
     $genomecompile -G hg18.fa -o hg18
     $cd ..
 
-3. Build for motif PWM (Optional)
+4. Build for motif PWM (Optional)
 
 The motif matrix file which containing the motif score cutoff is already packaged under /data directory under MotifScan package.
 
@@ -200,11 +200,11 @@ If you want you compile for your custom motifs, please run the following command
     $motifcompile -M nonredundant/pfm_vertebrates.txt -g ../genome/hg18 -o hg18_jaspar2016_nonredundant_vertebrates
     $cd ..
 
-4. Running MAmotif::
+5. Run MAmotif::
 
    $mamotif --p1 GSM908039_H3K4me3-A_peaks.bed --p2 GSM908038_H3K4me3-F_peaks.bed --r1 GSM908039_H3K4me3-A.bed --r2 GSM908038_H3K4me3-F.bed -g genome/hg18 -m motif/hg18_jaspar2016_nonredundant_vertebrates_1e-4.txt -o AvsF_H3K4me3_MAmotif
 
-5. Check the output of MAmotif
+6. Check the output of MAmotif
 
 
 License
