@@ -33,6 +33,7 @@ Contents
 
    intro
    tutorial
+   demo
    changelog
    faq
    license
