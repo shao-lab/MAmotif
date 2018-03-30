@@ -88,6 +88,10 @@ Build motifs (Optional)
 
 **Note:** MAmotif provides some preprocessed motif PWM files under **data/motif** of the MotifScan package.
 
+You can download it by::
+
+    $wget --no-check-certificate https://github.com/shao-lab/MAmotif/raw/master/data/motif.tar.gz
+
 Build motif PWM/motif-score cutoff for custom motifs that are not included in our pre-complied motif collection:
 
 ::
@@ -190,6 +194,10 @@ We take the H3K4me3 analysis between adult and fetal ProES in MAmotif paper as a
 4. Build for motif PWM (Optional)
 
 The motif matrix file which containing the motif score cutoff is already packaged under /data directory under MotifScan package.
+
+You can download it by::
+
+    $wget --no-check-certificate https://github.com/shao-lab/MAmotif/raw/master/data/motif.tar.gz
 
 If you want you compile for your custom motifs, please run the following commands::
 

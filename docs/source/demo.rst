@@ -48,6 +48,10 @@ We take the H3K4me3 analysis between adult and fetal ProES in MAmotif paper as a
 
 The motif matrix file which containing the motif score cutoff is already packaged under /data directory under MotifScan package.
 
+You can download it by::
+
+    $wget --no-check-certificate https://github.com/shao-lab/MAmotif/raw/master/data/motif.tar.gz
+
 If you want you compile for your custom motifs, please run the following commands::
 
     $mkdir motif
