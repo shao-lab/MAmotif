@@ -56,10 +56,6 @@ def argparser_config():
     group_advanced = parser.add_argument_group("Advanced arguments")
     group_advanced.add_argument("-n", dest="random_times", type=int, default=5,
                                 help="Times of permutation to test the enrichment of peak overlap between two samples.")
-    group_advanced.add_argument("-v", dest="overlap_dependent", action="store_true", default=False,
-                                help="With this option on, MAnorm will pick out biased/unbiased peaks in an "
-                                     "overlap-dependent manner. Biased peaks are only chosen from unique peaks, "
-                                     "and unbiased peaks are only chosen from common peaks.")
     group_advanced.add_argument("-p", dest="p_cutoff", type=float, default=0.01,
                                 help="P-value cutoff to define biased (sample 1/2-specific) peaks.")
     group_advanced.add_argument("--m_cutoff", dest="m_cutoff", type=float, default=1.0,
@@ -132,27 +128,24 @@ def main():
     else:
         distance_cutoff = peak_width / 2
     random_times = args.random_times
-    overlap_dependent = args.overlap_dependent
     p_cutoff = args.p_cutoff
     m_cutoff = args.m_cutoff
     output_all = args.output_all
     output_name = args.output_prefix
 
     manorm_workflow.main(peaks_file1=peaks_file1, peaks_file2=peaks_file2, reads_file1=reads_file1,
-                         reads_file2=reads_file2,
-                         shift_size1=shiftsize1, shift_size2=shiftsize2, peak_width=peak_width,
-                         distance_cutoff=distance_cutoff,
-                         random_times=random_times, overlap_dependent=overlap_dependent, m_cutoff=m_cutoff,
-                         p_cutoff=p_cutoff,
-                         output_all=output_all, output_name=output_name)
+                         reads_file2=reads_file2, shift_size1=shiftsize1, shift_size2=shiftsize2,
+                         peak_width=peak_width, summit_dis_cutoff=distance_cutoff,
+                         n_random=random_times, m_cutoff=m_cutoff, p_cutoff=p_cutoff,
+                         full_output=output_all, name1=None, name2=None, output_name=output_name)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)-8s @%(asctime)s: %(message)s", stream=sys.stderr,
                         datefmt="%m/%d/%Y %H:%M", filemode="w")
     genome_dir = args.genome
-    gene_file = args.gene
+    gene_file = os.path.abspath(args.gene)
     motif_file = args.motif
     motif_filter_file = args.motif_list
-    peak_file = output_name + '/' + output_name + '_all_peaks_MAvalues.xls'
+    peak_file = output_name + '/' + output_name + '_all_MAvalues.xls'
     peak_format = 'manorm'
     peak_length = args.peak_length
     control_file = None

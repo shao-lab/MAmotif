@@ -2,7 +2,7 @@ import os
 from setuptools import setup, find_packages
 from mamotif import __version__
 
-INSTALL_REQUIRES = ['MAnorm>=1.0', 'motifscan>=1.1']
+INSTALL_REQUIRES = ['MAnorm>=1.1.4', 'motifscan>=1.1.2']
 
 CLASSIFIERS = ['Development Status :: 3 - Alpha',
                'Environment :: Console',

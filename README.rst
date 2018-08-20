@@ -32,6 +32,13 @@ Workflow
 
 .. image:: https://github.com/shao-lab/MAmotif/blob/master/docs/source/image/MAmotif_workflow.png
 
+Citation
+--------
+
+`Sun H, Wang J, Gong Z, Yao J, Wang Y, Xu J, Yuan GC, Zhang Y, Shao Z. Quantitative integration of epigenomic variation
+and transcription factor binding using MAmotif toolkit identifies an important role of IRF2 as transcription activator
+at gene promoters. Cell discovery. 2018 Jul 10;4(1):38. <https://www.nature.com/articles/s41421-018-0045-y>`__
+
 Documentation
 -------------
 

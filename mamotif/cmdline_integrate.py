@@ -37,7 +37,7 @@ def main():
     parser = argparser_config()
     args = parser.parse_args()
     pk = args.pk
-    refgene = args.refgene
+    refgene = os.path.abspath(args.refgene)
     motif = args.motif
     negative = args.negative
     correction = args.correction
