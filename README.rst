@@ -187,6 +187,9 @@ We take the H3K4me3 analysis between adult and fetal ProES in MAmotif paper as a
     $sed -i "s/ /\t/g" GSM908038_H3K4me3-F.bed
     $sed -i "s/ /\t/g" GSM908039_H3K4me3-A.bed
 
+    $wget http://hgdownload.cse.ucsc.edu/goldenpath/hg18/database/refGene.txt.gz
+    $gzip -d refGene.txt.gz
+
 
 3. Build for genome sequences::
 
@@ -217,7 +220,7 @@ If you want you compile for your custom motifs, please run the following command
 
 5. Run MAmotif::
 
-   $mamotif --p1 GSM908039_H3K4me3-A_peaks.bed --p2 GSM908038_H3K4me3-F_peaks.bed --r1 GSM908039_H3K4me3-A.bed --r2 GSM908038_H3K4me3-F.bed -g genome/hg18 -m motif/hg18_jaspar2016_nonredundant_vertebrates_1e-4.txt -o AvsF_H3K4me3_MAmotif
+   $mamotif --p1 GSM908039_H3K4me3-A_peaks.bed --p2 GSM908038_H3K4me3-F_peaks.bed --r1 GSM908039_H3K4me3-A.bed --r2 GSM908038_H3K4me3-F.bed -g genome/hg18 -a refGene.txt -m motif/hg18_jaspar2016_nonredundant_vertebrates_1e-4.txt -o AvsF_H3K4me3_MAmotif
 
 6. Check the output of MAmotif
 
