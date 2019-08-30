@@ -178,8 +178,8 @@ We take the H3K4me3 analysis between adult and fetal ProES in MAmotif paper as a
     $gzip -d *gz
 
     Remove the header line and ribosomal reads (You do not need to do this for modern ChIP-seq mapping softwares)
-    $sed -i '1d' GSM908038_H3K4me3-F.bed
-    $sed -i '1d' GSM908039_H3K4me3-A.bed
+    $sed -i '1d' GSM908038_H3K4me3-F_peaks.bed
+    $sed -i '1d' GSM908039_H3K4me3-A_peaks.bed
     $sed -i '8986927,$d' GSM908039_H3K4me3-F.bed
     $sed -i '14916308,$d' GSM908039_H3K4me3-A.bed
 
