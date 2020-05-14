@@ -1,5 +1,0 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from mamotif import cmdline_integrate
-cmdline_integrate.main()
