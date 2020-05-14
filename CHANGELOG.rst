@@ -1,7 +1,8 @@
 ChangeLog
 =========
 
-v1.0
------------------
+v1.1.0 (2020-05-15)
+-------------------
 
-Initial release
+* Rewritten for Python 3.6+
+* Compatible with MAnorm 1.3.0 and MotifScan 1.2.0
