@@ -1,8 +1,13 @@
 .idea/
+.vscode/
 docs/build/
 build
 dist/
 *.pyc
 .tox/
 .coverage
-MAmoitf.egg-info/
+coverage.*
+htmlcov/
+MAmotif.egg-info/
+__pycache__
+.pytest_cache
