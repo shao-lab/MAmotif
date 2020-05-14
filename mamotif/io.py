@@ -18,7 +18,7 @@ def write_mamotif_results(path, results, correction):
                "T-test Statistic", "T-test P value (right-tailed)",
                f"T-test P value By {correction_str} correction",
                "RankSum-test Statistic", "RankSum-test P value (right-tailed)",
-               f"RankSum-test P value By {correction_str} correction\t",
+               f"RankSum-test P value By {correction_str} correction",
                "Maximal corrected P value\n"]
     header = '\t'.join(columns)
     results.sort(key=lambda x: x.padj)
