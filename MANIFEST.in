@@ -1,6 +1,6 @@
 include LICENSE
 include CHANGELOG.rst
-include README.md
+include README.rst
 include tox.ini
 include setup.py
 
