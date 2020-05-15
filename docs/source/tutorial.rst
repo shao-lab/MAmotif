@@ -38,7 +38,7 @@ You can also install MAmotif with conda_ through Bioconda_ channel::
 
    $ conda install -c bioconda mamotif
 
-.. _conda: https://conda.io/docs/
+.. _conda: https://conda.io/
 .. _Bioconda: https://bioconda.github.io/
 
 
