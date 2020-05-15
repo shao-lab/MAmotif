@@ -17,6 +17,10 @@ logger = logging.getLogger(__name__)
 
 
 def run_manorm_from_mamotif(args):
+    args.name1 = args.name1 or os.path.splitext(
+        os.path.basename(args.peak_file1))[0]
+    args.name2 = args.name2 or os.path.splitext(
+        os.path.basename(args.peak_file2))[0]
     manorm_dir = os.path.abspath(
         os.path.join(args.output_dir,
                      f'{args.name1}_vs_{args.name2}_manorm_output'))
